@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="./style/index.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="cordContainer">
+      <h2>IP Address Tracker</h2>
+      <div class="inpCon">
+        <input type="text" placeholder="Search for any IP address or domain" />
+        <button title="search"></button>
+      </div>
+    </div>
+
+    <div class="mapContainer">
+      <div class="infoContainer">
+        <div class="ipAdd">
+          <h6>IP ADDRESS</h6>
+          <p class="vals">no data</p>
+        </div>
+
+        <div class="locAdd">
+          <h6>LOCATION</h6>
+          <p class="vals">no data</p>
+        </div>
+
+        <div class="timAdd">
+          <h6>TIMZONE</h6>
+          <p class="vals">no data</p>
+        </div>
+
+        <div class="ispAdd">
+          <h6>ISP</h6>
+          <p class="vals">no data</p>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
